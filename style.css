@@ -17,6 +17,16 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+footer a:focus {
+  background-color: transparent !important;
+  border: none;
+}
+a:focus .icon-md {
+  color: white !important;
+  transform: rotate(360deg);
+
+  transition: 0.3s;
+}
 
 #page-loading-blocs-notifaction {
   position: fixed;
@@ -454,7 +464,7 @@ nav .caret {
 .btn.pull-right {
   margin: 0 0 5px 5px;
 }
-:focus {
+a:focus {
   border: black solid 1px;
   background-color: #ffffffc7 !important;
 }
@@ -788,6 +798,9 @@ h4 {
 .bgc-atomic-tangerine {
   background-color: #f3976c;
 }
+.bgc-atomic-black {
+  background-color: black;
+}
 
 .tc-white {
   color: #f3976c !important;
@@ -874,6 +887,7 @@ blockquote p {
   font-size: 17px;
   font-weight: 700;
 }
+
 @media (max-width: 1024px) {
   .bloc {
     padding-left: 20px;
